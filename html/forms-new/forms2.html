@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms 2</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="email" name="email" autocomplete="on" />
+      <input type="password" name="password" autocomplete="off" />
+      <br />
+      <label for="Username">Name</label>
+      <input type="text" name="userName" autofocus />
+      <br />
+      <input type="number" name="number" min="10" max="20" />
+      <input
+        type="number"
+        name="booksToRead"
+        min="3"
+        max="18"
+        step="3"
+        value="3"
+      />
+
+      <br />
+      <input type="text" name="code" title="The code of verification" />
+      <input
+        type="text"
+        name="numbers"
+        pattern="[A-Za-z]{3}"
+        title="Set the number"
+      />
+
+      <input type="text" name="Country" placeholder="El Salvador">
+      <!-- CAMPO OBLIGATORIO -->
+      <input type="text" name="Country" placeholder="El Salvador" required>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

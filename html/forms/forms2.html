@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies | Website</title>
+    <style>
+      html,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #d2d;
+        font-size: 1.5rem;
+      }
+
+      #title {
+        text-align: center;
+        font-weight: lighter;
+        margin: 3rem auto;
+        width: 100%;
+      }
+      #movies {
+        display: block;
+        margin: 0 auto;
+      }
+
+      #text {
+        text-align: center;
+      }
+      form select {
+        padding: 0.5rem;
+      }
+      form input {
+        margin: 1rem auto;
+        display: block;
+        border: 1px solid #000;
+        border-radius: 1rem;
+        background-color: #ccc;
+        padding: 0.5rem;
+        width: 10%;
+      }
+      form input:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Movies</h1>
+
+    <p id="text">Choice a movie here</p>
+    <form>
+      <select name="movie" id="movies">
+        <option value="pirate-1">Pirate 1</option>
+        <option value="pirate-2">Pirate 2</option>
+        <option value="pirate-3">Pirate 3</option>
+        <option value="pirate-4">Pirate 4</option>
+        <option value="enredados">Enredados</option>
+        <option value="rapidos-y-furiosos">Rapidos y furiosos</option>
+      </select>
+      <input type="submit" value="Watch" />
+    </form>
+  </body>
+</html>

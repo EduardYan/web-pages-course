@@ -1,0 +1,21 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 2em auto;
+  background-color: burlywood;
+  padding: 2em;
+}
+
+#form1, #form2, #form3 {
+  margin: 1em;
+}
+
+#form3 #sendButton {
+  display: block;
+}

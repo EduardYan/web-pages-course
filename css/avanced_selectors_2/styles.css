@@ -1,0 +1,33 @@
+/* ul > li:last-child {
+  font-weight: bold;
+} */
+
+/* si tiene el valor uno equivalen a :first-child y a :last-child */
+ul > li:nth-child(1) {
+  font-weight: bold;
+}
+
+ul > li:nth-last-child(1) {
+  font-weight: bold;
+}
+
+ul > li:nth-child(2) {
+  font-weight: lighter;
+  background-color: yellow;
+}
+
+
+/* el primer hijo de todos los elementos del elemento padre section de tipo p */
+p:first-of-type {
+  font-weight: bold;
+}
+
+/* contiguos */
+/* h1 + p {
+  background-color: red;
+} */
+
+/* que son hermanos */
+h1 ~ p {
+  background-color: rgb(0, 0, 255);
+}

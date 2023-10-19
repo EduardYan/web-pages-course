@@ -1,0 +1,27 @@
+body {
+  background-color: #eee;
+}
+
+a {
+  display: block;
+  font-size: 2em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  text-decoration: none;
+  color: #f00;
+}
+
+/* para focus the inputs in a forms*/
+:focus {
+  border: 2px solid #385d84;
+}

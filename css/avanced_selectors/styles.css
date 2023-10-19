@@ -1,0 +1,82 @@
+ul#lista > li {
+  font-weight: bold;
+}
+
+/*
+a toda etiqueta span que este inmediatamente despues de
+una imagen que tenga la clase new
+*/
+img.new + span {
+  font-weight: bold;
+}
+
+/* se le aplica al primer elemento que viene despues del elemento selecionado*/
+.other li:first-child {
+  font-size: 2em;
+}
+
+.other li.letra:first-child {
+  font-size: 2em;
+}
+
+/* se aplica a la primera letra del elemento selecionado */
+.other .letra:first-letter {
+  font-size: 2em;
+}
+
+.other .linea:first-line {
+  font-size: 2em;
+  color: #0f0;
+}
+
+/* se aplicara a cualquier etiqueta a que tenga como atributo title
+no importa su valor */
+/* a[title] {
+  color: #00f;
+  font-size: 3em;
+} */
+
+a[title="Buscador"] {
+  color: #ff0;
+  font-size: 3em;
+}
+
+a[title="Página del curso"] {
+  color: #0ff;
+  font-size: 3em;
+}
+/* 
+a[href="#"] {
+  color: #CE4676;
+  font-size: 3em;
+} */
+
+/* para selecionar solo el inicio de una palabra */
+a[id|="top"] {
+  background-color: blueviolet;
+}
+
+/* cuando queremos selecionar una palabra dentro de un atributo */
+a[title~="curso"] {
+  background-color: darkgreen;
+}
+
+:lang(en) {
+  font-style: italic;
+}
+
+/* agregar contenido */
+a.new::after {
+  content: " (Nuevo)";
+  color: #000;
+}
+
+a.old::before {
+  content: "(DEP)";
+  color: #000;
+}
+
+/*
+CSS RESET
+https://meyerweb.com/eric/tools/css/reset/
+*/

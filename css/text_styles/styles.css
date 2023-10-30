@@ -1,0 +1,36 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*
+  Absolute ✅ 
+  Relative ✅
+  Size ✅
+  Porcent ✅
+  */
+  font-size: xx-large;
+  
+  /*
+  normal y bold son los mas usados
+  */
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#more-text {
+  /* cambia el estilo del texto ✅ */
+  font-style: oblique;
+  font-size: large;
+}

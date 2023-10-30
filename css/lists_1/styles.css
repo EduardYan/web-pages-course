@@ -1,0 +1,34 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.container > ol {
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: georgian; */
+  list-style-type: decimal-leading-zero;
+}
+
+.container > ul {
+  list-style-type: circle;
+}
+
+ul[id = "inside"] {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ul[id="pasos"] {
+  list-style-image: url('./img/flecha.png');
+}
+
+dl[id="fractura"] dt {
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+main {
+  margin: 2rem auto;
+  width: 70%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#first {
+  /* indica la sangria de la primera linea del texto */
+  text-indent: 50px;
+}
+
+#second {
+  /* la propiedad blink no funciona ❌ */
+  text-decoration: line-through;
+}
+
+#third {
+ text-transform: uppercase;
+}

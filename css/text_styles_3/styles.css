@@ -1,0 +1,19 @@
+#first {
+  /* espacio entre letras */
+  letter-spacing: 20px;
+  /* letter-spacing: -20px; */
+}
+
+#second {
+  word-spacing: 10px;
+}
+
+#third {
+  /* espacio entre lineas */
+  line-height: 2rem;
+}
+
+#fourth {
+  /* indica como debe comportarse los espacios en blanco */
+  white-space: normal;
+}

@@ -7,32 +7,9 @@ Color Name 147 english names
 */
 
 body {
-  background-color: #415056;
-  color: #E8EFF3;
+  background-color: hsl(222, 100%, 72%);
 }
 
-#myDiv {
-  width: 50%;
-  margin: 0 auto;
-}
-
-#myDiv h1  {
-  text-align: center;
-  font-size: 3em;
-}
-
-
-#myDiv p {
-  text-align: justify;
-  font-size: 2em;
-}
-
-#myDiv a {
-  text-decoration: none;
-  font-size: 2em;
-  color: #E8EFF3;
-}
-
-#myDiv a:hover {
-  color: #AAD3EA;
+header {
+  background-color: oklch(91.7% 0.047 236.41);
 }

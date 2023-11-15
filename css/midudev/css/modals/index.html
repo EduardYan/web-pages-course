@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modals Page" />
+    <title>Modals</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="modal" hidden>
+      <div>
+        <button id="closeModalButton">❌</button>
+        <h1>Fill this formulary for register</h1>
+        <form action="">
+          <div>
+            <label for="name"> Name </label>
+            <input type="text" id="name" placeholder="Francisco" required />
+          </div>
+          <div>
+            <label for="email"> Email </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="francisco@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <header>
+      <nav class="navbar">
+        <h1>
+          <a href="#"> Book page </a>
+        </h1>
+
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button type="submit">🔍</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="book-view">
+        <div class="book-view-first">
+          <div>
+            <p id="p1"></p>
+          </div>
+          <div>
+            <p id="p2"></p>
+          </div>
+        </div>
+
+        <div class="book-view-second">
+          <button id="nextButton" class="button">Next Page 📄</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-first">
+        <p><strong>Copyright ©️ 2024</strong></p>
+        <button id="readMoreButton">Read more</button>
+      </div>
+      <div class="footer-second">
+        <p>Can you give me a star ?</p>
+        <button id="starButton" class="starButton">⭐</button>
+        <p id="starsView"></p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

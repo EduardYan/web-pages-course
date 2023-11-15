@@ -1,0 +1,60 @@
+/* .container {
+  width: 150px;
+  height: 150px;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: clip;
+  overflow: visible;
+}
+
+body {
+  background: #09f;
+  margin: 0;
+} */
+
+.parent {
+  border: 5px solid #000;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  position: relative; /* definimos el punto para que todos nuestros elementos hijos lo tomen de referencia cuando nuestros hijos no encuentren uno de referencia tomaran el mismo documento de referencia*/
+}
+
+/* .container {
+  background: #09f;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
+
+.container {
+  background: #09f;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  inset: 0;
+  margin: auto;
+}
+
+/* .container-2 {
+  background: #3d2;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+
+body {
+  background: rgb(188, 228, 255);
+}

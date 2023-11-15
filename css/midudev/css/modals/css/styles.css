@@ -1,0 +1,247 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe Print", sans-serif;
+}
+
+.show-modal {
+  background-color: rgb(238 209 170);
+  width: 70%;
+  height: 500px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 /40%);
+  padding: 10px;
+}
+
+.show-modal div {
+  position: relative;
+}
+
+.show-modal #closeModalButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-width: 0;
+  font-size: 1.2rem;
+}
+
+.show-modal #closeModalButton:hover {
+  cursor: pointer;
+}
+
+.show-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.show-modal form label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.show-modal form input {
+  padding: 0.5rem;
+  font-size: 15px;
+  transition: background-color 0.5s ease;
+  background-color: rgb(255 255 255 / 50%);
+  border-width: 0;
+  border-radius: 5px;
+}
+
+.show-modal form input:hover {
+  background-color: #fff;
+}
+
+.show-modal form input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px rgb(0 0 0 /25%);
+}
+
+.show-modal form button {
+  padding: 1rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(255 255 255 /50%);
+  font-family: inherit;
+}
+
+.show-modal form button:hover {
+  box-shadow: 0 0 0 5px rgb(0 0 0 /25%);
+  cursor: pointer;
+}
+
+header {
+  background: rgb(231, 218, 120);
+  padding: 0.4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.navbar h1 {
+  background-color: rgb(255 255 255 / 60%);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.navbar h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar form input,
+.navbar form button {
+  padding: 0.8rem 1rem;
+  background-color: rgb(255 255 255 / 30%);
+  border-width: 0;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.navbar form button:hover {
+  cursor: pointer;
+}
+
+.navbar form input {
+  font-size: 16px;
+}
+
+.navbar form input:hover,
+.navbar form input:focus,
+.navbar form button:focus,
+.navbar form button:hover {
+  background-color: #fff;
+}
+
+.navbar form input:focus,
+.navbar form button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px rgb(0 0 0 /25%);
+}
+
+main {
+  width: 67%;
+  height: 100vh;
+  margin: 2rem auto;
+}
+
+.book-view {
+  background: rgb(50, 200, 120);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.book-view .book-view-first {
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.book-view .book-view-first p {
+  font-size: 1.2rem;
+}
+
+.book-view .book-view-second {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-view .button {
+  padding: 1rem;
+  border-width: 0;
+  border-radius: 10px;
+}
+
+.book-view .button:hover {
+  box-shadow: 0 0 0 5px rgb(0 0 0 /25%);
+  cursor: pointer;
+}
+
+footer {
+  padding: 0.8rem;
+  background-color: rgb(90 108 226);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40%;
+}
+
+footer .footer-first #readMoreButton {
+  background-color: rgb(255 255 255 / 30%);
+  padding: 0.7rem;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+footer .footer-first #readMoreButton:hover {
+  box-shadow: 0 0 0 4px rgb(0 0 0 /25%);
+}
+
+footer .footer-second .starButton {
+  padding: 15px;
+}
+
+footer .footer-second #starsView {
+  padding: 10px;
+  display: inline;
+  background-color: rgb(255 255 255 /30%);
+  visibility: hidden;
+}
+footer .footer-first #readMoreButton:hover,
+footer .footer-second .starButton:hover {
+  cursor: pointer;
+}
+
+.visibleStarsView {
+  visibility: visible !important;
+}
+
+@media (width < 900px) {
+  main {
+    width: 90%;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .book-view .book-view-first {
+    flex-direction: column;
+  }
+
+  .show-modal {
+    width: 90%;
+  }
+
+  .show-modal h1 {
+    padding: 1rem;
+  }
+
+  .show-modal form button {
+    width: 50%;
+    padding: 0.5rem;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+}

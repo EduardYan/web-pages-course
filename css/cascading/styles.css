@@ -1,0 +1,27 @@
+
+body {
+  background: #18dfab;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+p {
+  color: #00f;
+}
+
+div {
+  color: #ff0095;
+  border: 2px solid #000;
+}
+
+div p {
+  color: inherit;
+}
+
+
+div a {
+  color: initial;
+}

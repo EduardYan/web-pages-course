@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+  box-sizing: border-box;
+}
+
+div {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* column-gap: 16px;
+  row-gap: 32px; */
+  /* gap: 32px 16px; */
+
+  /* forma correcta */
+  grid-template-columns: repeat(
+    auto-fill,
+    /*auto-fit hace mas grande un elemento (se nota mas con pocos elementos) */
+      minmax(200px, 1fr)
+  );
+
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* esta forma no es recomendada
+@media(width > 300px) {
+  div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(width > 600px) {
+  div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

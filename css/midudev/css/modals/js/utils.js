@@ -1,10 +1,10 @@
-const modalSection = document.querySelector(".modal");
+const $modalSection = document.querySelector(".modal");
 
 export function showModal() {
-  modalSection.removeAttribute("hidden");
-  modalSection.classList.add("show-modal");
+  $modalSection.removeAttribute("hidden");
+  $modalSection.classList.add("show-modal");
 }
 
 export function closeModal() {
-  modalSection.setAttribute("hidden", true);
+  $modalSection.setAttribute("hidden", true);
 }

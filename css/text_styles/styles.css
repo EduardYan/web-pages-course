@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +11,7 @@ main {
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /*
   Absolute ✅ 
   Relative ✅
@@ -18,7 +19,7 @@ h1 {
   Porcent ✅
   */
   font-size: xx-large;
-  
+
   /*
   normal y bold son los mas usados
   */

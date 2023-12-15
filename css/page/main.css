@@ -46,7 +46,9 @@ table caption {
   font-size: 2em;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #000;
 }
 

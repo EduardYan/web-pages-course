@@ -1,4 +1,4 @@
 # Web Pages Course ✅
 
 - Google Certification practices 🥇
-- Midudev courses practices 🥇
+- Midudev HTML/CSS course practices 🥇

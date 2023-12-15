@@ -12,7 +12,9 @@ body {
   padding: 2em;
 }
 
-#form1, #form2, #form3 {
+#form1,
+#form2,
+#form3 {
   margin: 1em;
 }
 

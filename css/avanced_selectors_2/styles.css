@@ -16,7 +16,6 @@ ul > li:nth-child(2) {
   background-color: yellow;
 }
 
-
 /* el primer hijo de todos los elementos del elemento padre section de tipo p */
 p:first-of-type {
   font-weight: bold;

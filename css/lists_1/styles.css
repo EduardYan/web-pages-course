@@ -20,13 +20,13 @@ body {
   list-style-type: circle;
 }
 
-ul[id = "inside"] {
+ul[id="inside"] {
   list-style-type: square;
   list-style-position: inside;
 }
 
 ul[id="pasos"] {
-  list-style-image: url('./img/flecha.png');
+  list-style-image: url("./img/flecha.png");
 }
 
 dl[id="fractura"] dt {
